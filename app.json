@@ -2,6 +2,7 @@
   "expo": {
     "name": "White-Whale",
     "slug": "White-Whale",
+    "scheme": "White-Whale",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
