@@ -9,6 +9,34 @@ const RootLayout = () => {
         name='index' 
         options={{ headerShown: true }}
       />
+      <Stack.Screen 
+        name='(auth)/sign-in' 
+        options={{ headerShown: true }}
+      />
+      <Stack.Screen 
+        name='(auth)/sign-up' 
+        options={{ headerShown: true }}
+      />
+      <Stack.Screen 
+        name='(auth)/signAge' 
+        options={{ headerShown: true }}
+      />
+      <Stack.Screen 
+        name='(auth)/signName' 
+        options={{ headerShown: true }}
+      />
+      <Stack.Screen 
+        name='testParticles' 
+        options={{ headerShown: true }}
+      />
+      <Stack.Screen 
+        name='testPushNotif' 
+        options={{ headerShown: true }}
+      />
+      <Stack.Screen 
+        name='chat' 
+        options={{ headerShown: true }}
+      />
     </Stack>
   )
   // return <Slot />

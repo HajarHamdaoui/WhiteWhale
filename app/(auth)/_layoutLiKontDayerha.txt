@@ -1,0 +1,40 @@
+import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import { Link, Redirect, Stack } from 'expo-router'
+
+const SignUpLayout = () => {
+  return (
+    <View>
+      {/* <ImageBackground source={require('../../../assets/header.png')} /> */}
+      <Image source={require('../../assets/header.png')} style={styles.headerImg} />
+      <Text>halla</Text>
+      <Stack initialRouteName='sign-in'>
+        <Stack.Screen
+          name="sign-in"
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="sign-up"
+          options={{
+            headerShown: false,
+          }}
+        />
+      </Stack>
+      {/* <Redirect href="/sign-in" /> */}
+      {/* <Link href="(auth)/sign-up/index" style={{fontSize: 64}}>register</Link> */}
+    </View>
+  )
+}
+
+export default SignUpLayout
+
+const styles = StyleSheet.create({
+  headerImg: {
+    top: 0,
+    left: 0,
+    zIndex: -999,
+    position: 'absolute'
+  }
+})

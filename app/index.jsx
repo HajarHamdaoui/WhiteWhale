@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
 import React, { useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber/native'
+import { Link, router } from 'expo-router';
 
 
 function Box(props) {
@@ -25,13 +26,24 @@ function Box(props) {
 
 export default function App() {
   return (
-    <Canvas>
-      <ambientLight intensity={Math.PI / 2} />
-      <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} decay={0} intensity={Math.PI} />
-      <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
-      <Box position={[-1.2, 0, 0]} />
-      <Box position={[1.2, 0, 0]} />
-    </Canvas>
+    <>
+      <Canvas>
+        <ambientLight intensity={Math.PI / 2} />
+        <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} decay={0} intensity={Math.PI} />
+        <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
+        <Box position={[-1.2, 0, 0]} />
+        <Box position={[1.2, 0, 0]} />
+      </Canvas>
+      {/* <Button
+        title="logins"
+        onClick={() => router.push("(auth)/sign-in")}
+      /> */}
+      <Link href="(auth)/sign-in">login</Link>
+      <Link href="testParticles">particles</Link>
+      <Link href="(auth)/sign-up">register</Link>
+      <Link href="testPushNotif">notif</Link>
+      <Link href="chat">chat</Link>
+    </>
   );
 }
 
