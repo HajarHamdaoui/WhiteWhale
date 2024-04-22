@@ -5,9 +5,16 @@ import { useFonts } from 'expo-font';
 
 
 const Login = () => {
-  const [fontsLoaded, fontError] = useFonts({
-    'BubblegumSans-Regular': require('../../assets/fonts/BubblegumSans-Regular.ttf'),
+  // const [fontsLoaded, fontError] = useFonts({
+  //   'BubblegumSans-Regular': require('../../assets/fonts/BubblegumSans-Regular.ttf'),
+  // });
+  const [loaded] = useFonts({
+    BubblegumSans: require('../../assets/fonts/BubblegumSans-Regular.ttf'),
   });
+
+  if (!loaded) {
+    return null; // You can return a loading indicator here
+  }
   
 
   const floatAnim1 = new Animated.Value(30);
@@ -114,7 +121,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 64,
     marginVertical: 20,
-    fontFamily: 'BubblegumSans-Regular',
+    fontFamily: 'BubblegumSans',
     color: '#fff'
   },
   input: {
@@ -127,7 +134,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     color: '#F3B6AC',
     borderRadius: 50,
-    fontFamily: 'BubblegumSans-Regular',
+    fontFamily: 'BubblegumSans',
     paddingLeft: 40,
     paddingVertical: 20,
     elevation: 5,  
@@ -149,7 +156,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#fff',
     fontSize: 30,
-    fontFamily: 'BubblegumSans-Regular',
+    fontFamily: 'BubblegumSans',
   },
   registerLink: {
     marginTop: 20,

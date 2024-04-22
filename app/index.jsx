@@ -38,11 +38,11 @@ export default function App() {
         title="logins"
         onClick={() => router.push("(auth)/sign-in")}
       /> */}
-      <Link href="(auth)/sign-in">login</Link>
-      <Link href="testParticles">particles</Link>
-      <Link href="(auth)/sign-up">register</Link>
-      <Link href="testPushNotif">notif</Link>
-      <Link href="chat">chat</Link>
+      <Link style={styles.link} href="(auth)/sign-in">login</Link>
+      <Link style={styles.link} href="testParticles">particles</Link>
+      <Link style={styles.link} href="(auth)/sign-up">register</Link>
+      <Link style={styles.link} href="testPushNotif">notif</Link>
+      <Link style={styles.link} href="chat">chat</Link>
     </>
   );
 }
@@ -54,6 +54,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  link: {
+    backgroundColor: '#000',
+    color: '#efefef',
+    margin: 5,
+  }
 });
 
 

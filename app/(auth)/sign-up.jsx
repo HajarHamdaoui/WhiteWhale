@@ -1,9 +1,17 @@
 import { Animated, Easing, Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React, { useEffect } from 'react'
 import { Link } from 'expo-router'
+import { useFonts } from 'expo-font';
 
 const register = () => {
-  
+  const [loaded] = useFonts({
+    BubblegumSans: require('../../assets/fonts/BubblegumSans-Regular.ttf'),
+    Poppins: require('../../assets/fonts/Poppins-Regular.ttf'),
+  });
+
+  if (!loaded) {
+    return null;
+  }
   const floatAnim1 = new Animated.Value(0);
   const floatAnim2 = new Animated.Value(0);
 
@@ -101,7 +109,11 @@ const register = () => {
         <Text style={styles.buttonLabel}>Next</Text></Link>
       </TouchableOpacity>
       <TouchableOpacity >
-        <Text style={styles.loginLink}>Already a friend? Login here</Text>
+        <Link
+          style={styles.loginLink}
+          href="(auth)/sign-in"
+        >Already a friend? Login here</Link>
+        {/* <Text style={styles.loginLink}>Already a friend? Login here</Text> */}
       </TouchableOpacity>
     </View>
   )
@@ -111,7 +123,7 @@ export default register
 
 const styles = StyleSheet.create({
   container:{
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'Poppins',
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
@@ -129,13 +141,13 @@ const styles = StyleSheet.create({
     marginBottom: 25,
   },
   headerTitle:{
-    fontFamily: 'BubblegumSans-Regular',
+    fontFamily: 'BubblegumSans',
     color: '#365486',
     fontSize: 40,
   },
   headerIndex: {
     color: '#365486',
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'Poppins',
     marginBottom: 25,
   },
   input: {
@@ -150,7 +162,7 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     // borderRadius: 5,
     color: '#0F1035',
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'Poppins',
     paddingLeft: 40,
     // paddingVertical: 20,
     elevation: 2,  
@@ -177,7 +189,7 @@ const styles = StyleSheet.create({
   buttonLabel: {
     color: '#DCF2F1',
     fontSize: 16,
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'Poppins',
   },
   inputIcon:{
     // right: 10,

@@ -1,29 +1,34 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, TextInput, StyleSheet, TouchableOpacity, Text, FlatList } from 'react-native';
 import { OPENAI_API_KEY } from '@env';
 import OpenAI from "openai";
 // import Constants from 'expo-constants';
 
-const apiKey = OPENAI_API_KEY;
+// const apiKey = OPENAI_API_KEY;
 
 const ChatScreen = () => {
   const [messages, setMessages] = useState([]);
   const [inputText, setInputText] = useState('');
-
-  const openai = new OpenAI();
+  // const [apiKey, setApiKey] = useState("");
+  // useEffect(() => {
+  //   setApiKey(OPENAI_API_KEY);
+  // }, [])
+  
+// const config = {
+//       headers: {
+//         Authorization: `Bearer ${OPENAI_API_KEY}`,
+//         'Content-Type': 'application/json',
+//       },
+//     };
+  const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
   
   async function generateResponse (prevMessages) {
-    const config = {
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-    };
+    
     const completion = await openai.chat.completions.create({
       messages: [{"role": "system", "content": "You are a children therapist working in the cbt model to help them with their phone addiction act funny and friendly and try to be talkative."},
           ...prevMessages],
       model: "ft:gpt-3.5-turbo-0125:personal:cbt-phone-addict:9Epx47JT",
-    }, config);
+    } );
   
     const response = completion.choices[0];
     return response;
@@ -35,6 +40,7 @@ const ChatScreen = () => {
       setMessages([...messages, { role: 'user', content: inputText }]);
       const gptResponse = await generateResponse(messages).message;
       setMessages([...messages, { role: 'user', content: inputText, gptResponse }]);
+      console.log(messages);
       setInputText('');
     }
   };
