@@ -1,28 +1,40 @@
 import React, { useState } from 'react';
 import { View, TextInput, StyleSheet, TouchableOpacity, Text, FlatList } from 'react-native';
-// import OpenAI from "openai";
+import { OPENAI_API_KEY } from '@env';
+import OpenAI from "openai";
+// import Constants from 'expo-constants';
+
+const apiKey = OPENAI_API_KEY;
 
 const ChatScreen = () => {
   const [messages, setMessages] = useState([]);
   const [inputText, setInputText] = useState('');
 
-//   const openai = new OpenAI();
+  const openai = new OpenAI();
   
-//   async function main() {
-//     const completion = await openai.chat.completions.create({
-//       messages: [{"role": "system", "content": "You are a helpful assistant."},
-//           {"role": "user", "content": "Who won the world series in 2020?"},
-//           {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
-//           {"role": "user", "content": "Where was it played?"}],
-//       model: "gpt-3.5-turbo",
-//     });
+  async function generateResponse (prevMessages) {
+    const config = {
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+      },
+    };
+    const completion = await openai.chat.completions.create({
+      messages: [{"role": "system", "content": "You are a children therapist working in the cbt model to help them with their phone addiction act funny and friendly and try to be talkative."},
+          ...prevMessages],
+      model: "ft:gpt-3.5-turbo-0125:personal:cbt-phone-addict:9Epx47JT",
+    }, config);
   
-//     console.log(completion.choices[0]);
-//   }
+    const response = completion.choices[0];
+    return response;
+    // console.log(completion.choices[0]);
+  }
 
-  const sendMessage = () => {
+  const sendMessage = async () => {
     if (inputText.trim() !== '') {
-      setMessages([...messages, { text: inputText, role: 'user' }]);
+      setMessages([...messages, { role: 'user', content: inputText }]);
+      const gptResponse = await generateResponse(messages).message;
+      setMessages([...messages, { role: 'user', content: inputText, gptResponse }]);
       setInputText('');
     }
   };
