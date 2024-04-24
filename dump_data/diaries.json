@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "title": "this is my note",
+        "image": "../../assets/Frame 15.png",
+        "note": "Day one of the week my friends dont want to play with me",
+        "reactions" : {
+            "happy" : 0,
+            "sad": 0,
+            "angry": 0
+        }
+    },
+    {
+        "id": 2,
+        "title": "this is my note",
+        "image": "../../assets/Frame 15.png",
+        "note": "my dear diaries to day i went to play football and i think my friends are ignoring me. i'm worried they don't want to include me",
+        "reactions" : {
+            "happy" : 0,
+            "sad": 0,
+            "angry": 0
+        }
+    },
+    {
+        "id": 3,
+        "title": "this is my note",
+        "image": "../../assets/Frame 15.png",
+        "note": "mom is telling me to go to my friend's party but i don't want to i am worried if i dont look good enough so they ignore me",
+        "reactions" : {
+            "happy" : 0,
+            "sad": 0,
+            "angry": 0
+        }
+    },
+    {
+        "id": 4,
+        "title": "this is my note",
+        "image": "../../assets/Frame 15.png",
+        "note": "today our teacher was asking about something in the book i knew the right answer but i couldn't say it aloud",
+        "reactions" : {
+            "happy" : 0,
+            "sad": 0,
+            "angry": 0
+        }
+    },
+    {
+        "id": 5,
+        "title": "this is my note",
+        "image": "../../assets/Frame 15.png",
+        "note": "people dislike chatting with me and i'm oring conversationalist",
+        "reactions" : {
+            "happy" : 0,
+            "sad": 0,
+            "angry": 0
+        }
+    }
+]

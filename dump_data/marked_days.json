@@ -1,0 +1,79 @@
+[{
+  "2024-04-04": {
+    "marked": false,
+    "selected": true,
+    "selectedColor": "#7ebbfc",
+    "selectedTextColor": "white",
+    "dotColor": "white"
+  },
+  "2024-04-13": {
+    "marked": false,
+    "selected": true,
+    "selectedColor": "'#3366ff",
+    "selectedTextColor": "white",
+    "dotColor": "white"
+  },
+  "2024-04-16": {
+    "marked": false,
+    "selected": true,
+    "selectedColor": "#1340c8",
+    "selectedTextColor": "white",
+    "dotColor": "white"
+  },
+  "2024-04-17": {
+    "marked": false,
+    "selected": true,
+    "selectedColor": "#0029a3",
+    "selectedTextColor": "white",
+    "dotColor": "white"
+  },
+  "2024-04-18": {
+    "marked": false,
+    "selected": true,
+    "selectedColor": "#1c1d7c",
+    "selectedTextColor": "white",
+    "dotColor": "white"
+  },
+  "2024-04-22": {
+    "marked": true,
+    "selected": true,
+    "selectedColor": "#1c1d7c",
+    "selectedTextColor": "white",
+    "dotColor": "white"
+  },
+  "2024-04-19": {
+    "marked": false,
+    "selected": true,
+    "selectedColor": "'#3366ff",
+    "selectedTextColor": "white",
+    "dotColor": "white"
+  },
+  "2024-04-11": {
+    "marked": false,
+    "selected": true,
+    "selectedColor": "#1340c8",
+    "selectedTextColor": "white",
+    "dotColor": "white"
+  },
+  "2024-04-08": {
+    "marked": false,
+    "selected": true,
+    "selectedColor": "#0029a3",
+    "selectedTextColor": "white",
+    "dotColor": "white"
+  },
+  "2024-04-10": {
+    "marked": false,
+    "selected": true,
+    "selectedColor": "#1c1d7c",
+    "selectedTextColor": "white",
+    "dotColor": "white"
+  },
+  "2024-04-01": {
+    "marked": true,
+    "selected": true,
+    "selectedColor": "#1c1d7c",
+    "selectedTextColor": "white",
+    "dotColor": "white"
+  }
+}]

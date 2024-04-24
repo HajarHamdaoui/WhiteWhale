@@ -1,0 +1,217 @@
+[
+  {
+    "title": "Drawing Challenge",
+    "icon": "🎨",
+    "description": "Participants draw a specific theme or subject using any medium they prefer, then post their artwork for evaluation by vote."
+  },
+  {
+    "title": "Creative Writing Prompt",
+    "icon": "📝",
+    "description": "Participants write a short story or poem based on a given prompt, then share their writing for evaluation by vote."
+  },
+  {
+    "title": "Origami Creations",
+    "icon": "🎐",
+    "description": "Participants create origami sculptures or designs following provided instructions, then post pictures of their creations for evaluation by vote."
+  },
+  {
+    "title": "LEGO Building Challenge",
+    "icon": "🏗️",
+    "description": "Participants build a specific structure or scene using LEGO bricks, then share photos of their builds for evaluation by vote."
+  },
+  {
+    "title": "Nature Scavenger Hunt",
+    "icon": "🌿",
+    "description": "Participants go on a scavenger hunt in nature to find specific items like leaves, rocks, or flowers, then post pictures of their collections for evaluation by vote."
+  },
+  {
+    "title": "Science Experiment",
+    "icon": "🔬",
+    "description": "Participants conduct a simple science experiment using household items, then share their results and observations for evaluation by vote."
+  },
+  {
+    "title": "Cooking Challenge",
+    "icon": "👩‍🍳",
+    "description": "Participants cook a dish following a provided recipe or theme, then post pictures of their culinary creations for evaluation by vote."
+  },
+  {
+    "title": "DIY Craft Project",
+    "icon": "✂️",
+    "description": "Participants create a craft project using materials like paper, fabric, or recycled items, then share photos of their finished projects for evaluation by vote."
+  },
+  {
+    "title": "Music Performance",
+    "icon": "🎵",
+    "description": "Participants perform a piece of music on an instrument or with their voice, then share recordings or videos of their performances for evaluation by vote."
+  },
+  {
+    "title": "Dance Routine",
+    "icon": "💃",
+    "description": "Participants choreograph and perform a dance routine, then share videos of their dances for evaluation by vote."
+  },
+  {
+    "title": "Photography Challenge",
+    "icon": "📷",
+    "description": "Participants take photos based on a specific theme or prompt, then post their best shots for evaluation by vote."
+  },
+  {
+    "title": "Puzzle Solving",
+    "icon": "🧩",
+    "description": "Participants solve a challenging puzzle, such as a jigsaw puzzle, crossword, or Sudoku, then share their completion for evaluation by vote."
+  },
+  {
+    "title": "Coding Project",
+    "icon": "💻",
+    "description": "Participants create a simple program, game, or website using coding languages like Scratch, Python, or HTML/CSS, then share their projects for evaluation by vote."
+  },
+  {
+    "title": "Math Challenge",
+    "icon": "🧮",
+    "description": "Participants solve complex math problems or puzzles, then share their solutions and methods for evaluation by vote."
+  },
+  {
+    "title": "Foreign Language Showcase",
+    "icon": "🗣️",
+    "description": "Participants demonstrate their proficiency in a foreign language by recording themselves speaking, then share their recordings for evaluation by vote."
+  },
+  {
+    "title": "Virtual Reality Creation",
+    "icon": "🕶️",
+    "description": "Participants design and create a virtual reality experience using platforms like Unity or Oculus, then share their creations for evaluation by vote."
+  },
+  {
+    "title": "Gardening Project",
+    "icon": "🌱",
+    "description": "Participants grow and care for a specific plant or garden, documenting their progress with photos and descriptions for evaluation by vote."
+  },
+  {
+    "title": "Historical Reenactment",
+    "icon": "⚔️",
+    "description": "Participants research and reenact a scene from history, then share videos or photos of their performances for evaluation by vote."
+  },
+  {
+    "title": "Board Game Design",
+    "icon": "🎲",
+    "description": "Participants design and create their own board game, including rules and components, then share their games for evaluation by vote."
+  },
+  {
+    "title": "Magic Trick Performance",
+    "icon": "🎩",
+    "description": "Participants learn and perform a magic trick, then share videos of their performances for evaluation by vote."
+  },
+  {
+    "title": "Fashion Design Challenge",
+    "icon": "👗",
+    "description": "Participants design and create their own fashion outfit or accessory, then share photos of their designs for evaluation by vote."
+  },
+  {
+    "title": "Film Making",
+    "icon": "🎥",
+    "description": "Participants write, direct, and produce a short film or video, then share their creations for evaluation by vote."
+  },
+  {
+    "title": "Chess Tournament",
+    "icon": "♟️",
+    "description": "Participants compete in a chess tournament, playing matches against each other and sharing the results for evaluation by vote."
+  },
+  {
+    "title": "Debate Competition",
+    "icon": "🗣️",
+    "description": "Participants engage in a structured debate on a given topic, presenting arguments and counterarguments, then share videos of their debates for evaluation by vote."
+  },
+  {
+    "title": "Fitness Challenge",
+    "icon": "🏋️",
+    "description": "Participants complete a fitness challenge, such as a set number of push-ups, sit-ups, or a timed run, then share their results for evaluation by vote."
+  },
+  {
+    "title": "Robotics Project",
+    "icon": "🤖",
+    "description": "Participants design, build, and program a robot to perform a specific task or function, then share videos or demonstrations for evaluation by vote."
+  },
+  {
+    "title": "Environmental Awareness Campaign",
+    "icon": "🌍",
+    "description": "Participants create and execute a campaign to raise awareness about environmental issues, documenting their efforts for evaluation by vote."
+  },
+  {
+    "title": "Poetry Slam",
+    "icon": "🎤",
+    "description": "Participants write and perform original poetry in a spoken word format, then share videos of their performances for evaluation by vote."
+  },
+  {
+    "title": "Escape Room Challenge",
+    "icon": "🔐",
+    "description": "Participants solve puzzles and riddles to 'escape' from a virtual or physical escape room, then share their experiences for evaluation by vote."
+  },
+  {
+    "title": "DIY Home Improvement Project",
+    "icon": "🛠️",
+    "description": "Participants plan and execute a home improvement project, such as painting a room or building furniture, then share before and after photos for evaluation by vote."
+  },
+  {
+    "title": "Animal Care Project",
+    "icon": "🐾",
+    "description": "Participants volunteer at an animal shelter, foster animals, or create educational materials about animal care, then share their experiences and work for evaluation by vote."
+  },
+  {
+    "title": "Calligraphy Challenge",
+    "icon": "✒️",
+    "description": "Participants practice and create calligraphy pieces using different styles and techniques, then share photos of their work for evaluation by vote."
+  },
+  {
+    "title": "Inventor's Workshop",
+    "icon": "🛠️",
+    "description": "Participants invent and prototype a new product or gadget, documenting their design process and results for evaluation by vote."
+  },
+  {
+    "title": "Yoga or Meditation Practice",
+    "icon": "🧘",
+    "description": "Participants engage in a yoga or meditation session, then share reflections on their practice and its benefits for evaluation by vote."
+  },
+  {
+    "title": "Community Service Project",
+    "icon": "🤝",
+    "description": "Participants organize and participate in a community service project, such as a park cleanup or food drive, then share their contributions for evaluation by vote."
+  },
+  {
+    "title": "Astrophotography",
+    "icon": "🔭",
+    "description": "Participants capture and share photographs of celestial objects, such as stars, planets, or galaxies, for evaluation by vote."
+  },
+  {
+    "title": "Foreign Cuisine Cooking",
+    "icon": "🍜",
+    "description": "Participants cook a dish from a foreign cuisine, exploring new flavors and techniques, then share photos of their culinary adventures for evaluation by vote."
+  },
+  {
+    "title": "Geocaching Adventure",
+    "icon": "🗺️",
+    "description": "Participants go on a geocaching adventure, finding hidden treasures using GPS coordinates, then share their finds and experiences for evaluation by vote."
+  },
+  {
+    "title": "Online Course Completion",
+    "icon": "📚",
+    "description": "Participants enroll in and complete an online course on a topic of interest, then share certificates or summaries of their learning for evaluation by vote."
+  },
+  {
+    "title": "DIY Musical Instrument",
+    "icon": "🎶",
+    "description": "Participants design and create their own musical instrument using household items or recycled materials, then share videos of their instruments being played for evaluation by vote."
+  },
+  {
+    "title": "Virtual Volunteering",
+    "icon": "🤲",
+    "description": "Participants volunteer for a cause or organization remotely, contributing their time and skills online, then share their experiences and impact for evaluation by vote."
+  },
+  {
+    "title": "Baking Challenge",
+    "icon": "🍰",
+    "description": "Participants bake a challenging dessert or pastry, then share photos of their delicious creations for evaluation by vote."
+  },
+  {
+    "title": "Scrapbooking Project",
+    "icon": "📒",
+    "description": "Participants create a scrapbook or memory album documenting special events or moments, then share photos of their creative layouts for evaluation by vote."
+  }
+]

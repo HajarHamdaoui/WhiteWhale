@@ -1,15 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, Text, View } from 'react-native';
-import React, { useRef, useState } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber/native'
-import { Link, router } from 'expo-router';
-
+import { StatusBar } from "expo-status-bar";
+import { Button, StyleSheet, Text, View } from "react-native";
+import React, { useRef, useState } from "react";
+import { Canvas, useFrame } from "@react-three/fiber/native";
+import { Link, router } from "expo-router";
+import Home from "./components/home/home";
+import Roaring from "./components/roaring/roar";
 
 function Box(props) {
-  const meshRef = useRef(null)
-  const [hovered, setHover] = useState(false)
-  const [active, setActive] = useState(false)
-  useFrame((state, delta) => (meshRef.current.rotation.x += delta))
+  const meshRef = useRef(null);
+  const [hovered, setHover] = useState(false);
+  const [active, setActive] = useState(false);
+  useFrame((state, delta) => (meshRef.current.rotation.x += delta));
   return (
     <mesh
       {...props}
@@ -17,53 +18,55 @@ function Box(props) {
       scale={active ? 1.5 : 1}
       onClick={(event) => setActive(!active)}
       onPointerOver={(event) => setHover(true)}
-      onPointerOut={(event) => setHover(false)}>
+      onPointerOut={(event) => setHover(false)}
+    >
       <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
+      <meshStandardMaterial color={hovered ? "hotpink" : "orange"} />
     </mesh>
-  )
+  );
 }
 
 export default function App() {
   return (
-    <>
-      <Canvas>
-        <ambientLight intensity={Math.PI / 2} />
-        <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} decay={0} intensity={Math.PI} />
-        <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
-        <Box position={[-1.2, 0, 0]} />
-        <Box position={[1.2, 0, 0]} />
-      </Canvas>
-      {/* <Button
-        title="logins"
-        onClick={() => router.push("(auth)/sign-in")}
-      /> */}
-      <Link style={styles.link} href="(auth)/sign-in">login</Link>
-      <Link style={styles.link} href="testParticles">particles</Link>
-      <Link style={styles.link} href="(auth)/sign-up">register</Link>
-      <Link style={styles.link} href="testPushNotif">notif</Link>
-      <Link style={styles.link} href="chat">chat</Link>
-    </>
+    // <>
+    //   {/* <Button
+    //     title="logins"
+    //     onClick={() => router.push("(auth)/sign-in")}
+    //   /> */}
+
+    //   <Link style={styles.link} href="(auth)/sign-in">
+    //     login
+    //   </Link>
+    //   <Link style={styles.link} href="testParticles">
+    //     particles
+    //   </Link>
+    //   <Link style={styles.link} href="(auth)/sign-up">
+    //     register
+    //   </Link>
+    //   <Link style={styles.link} href="testPushNotif">
+    //     notif
+    //   </Link>
+    //   <Link style={styles.link} href="chat">
+    //     chat
+    //   </Link>
+    // </>
+    <Roaring />
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
   link: {
-    backgroundColor: '#000',
-    color: '#efefef',
+    backgroundColor: "#000",
+    color: "#efefef",
     margin: 5,
-  }
+  },
 });
-
-
-
-
 
 // const Carousel = () => {
 //   const carouselRef = useRef();
@@ -97,4 +100,3 @@ const styles = StyleSheet.create({
 // };
 
 // export default Carousel;
-
